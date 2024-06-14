@@ -28,6 +28,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
  */
 
 //Documentation http://localhost:8080/swagger-ui/index.html
+//gcloud https://pinapp-426416.rj.r.appspot.com/customers/test
 @RestController
 @RequestMapping(path = "/customers")
 @Tag(name = "Customer Controller")
@@ -37,6 +38,13 @@ public class CustomerController {
 	
 	@Autowired
 	private CustomerService customerService;
+	
+	
+	@Operation(summary = "test")
+	@GetMapping(path = "/test")
+	public String test() {
+		return "Welcome";
+	}
 
 	@Operation(summary = "Crear clientes")
 	@PostMapping(path = "/creacliente", produces = {
