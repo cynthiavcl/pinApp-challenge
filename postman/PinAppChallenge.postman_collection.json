@@ -56,6 +56,49 @@
 			"response": []
 		},
 		{
+			"name": "welcome Prod",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pinapp-426416.rj.r.appspot.com/customers/test",
+					"protocol": "https",
+					"host": [
+						"pinapp-426416",
+						"rj",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"customers",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "welcome Local",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "listclientes",
 			"request": {
 				"method": "GET",
