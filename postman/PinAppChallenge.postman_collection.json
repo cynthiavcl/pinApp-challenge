@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "ee639700-2c71-4854-8263-07ae9be454f9",
+		"name": "PinAppChallenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3123651"
+	},
+	"item": [
+		{
+			"name": "creacliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Carla\",\r\n        \"surname\": \"Perez\",\r\n        \"birth\": \"2010-01-01\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers/creacliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"creacliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kpideclientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers/kpideclientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"kpideclientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listclientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers/listclientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"listclientes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
