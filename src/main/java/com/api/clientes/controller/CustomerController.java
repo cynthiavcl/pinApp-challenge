@@ -1,4 +1,4 @@
-package com.api.clientes.rest;
+package com.api.clientes.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
